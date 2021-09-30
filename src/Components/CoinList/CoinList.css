@@ -1,0 +1,103 @@
+.coin-cards-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: 40px;
+  padding: 20px 0;
+}
+
+.cards {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: 40px;
+}
+
+.card {
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #041a29;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.card-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card p {
+  color: ;
+  margin: 0;
+}
+
+.card-price-up {
+  color: #2cb362;
+}
+
+.card-price-down {
+  color: #bd5e74;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.card-price {
+  padding-bottom: 8px;
+  font-size: 1.6rem;
+}
+
+.card-rank {
+  padding-right: 5px;
+  font-size: 2rem;
+  color: #072f49;
+}
+
+main select {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .coin-cards-container {
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .coin-cards-container {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+}
