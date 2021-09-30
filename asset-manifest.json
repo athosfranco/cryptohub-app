@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/athosfranco/cryptohub-app/static/css/main.ac189484.chunk.css",
+    "main.js": "/athosfranco/cryptohub-app/static/js/main.56130f4b.chunk.js",
+    "main.js.map": "/athosfranco/cryptohub-app/static/js/main.56130f4b.chunk.js.map",
+    "runtime-main.js": "/athosfranco/cryptohub-app/static/js/runtime-main.47021d07.js",
+    "runtime-main.js.map": "/athosfranco/cryptohub-app/static/js/runtime-main.47021d07.js.map",
+    "static/css/2.818011ed.chunk.css": "/athosfranco/cryptohub-app/static/css/2.818011ed.chunk.css",
+    "static/js/2.eccb123c.chunk.js": "/athosfranco/cryptohub-app/static/js/2.eccb123c.chunk.js",
+    "static/js/2.eccb123c.chunk.js.map": "/athosfranco/cryptohub-app/static/js/2.eccb123c.chunk.js.map",
+    "index.html": "/athosfranco/cryptohub-app/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/athosfranco/cryptohub-app/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.ac189484.chunk.css.map": "/athosfranco/cryptohub-app/static/css/main.ac189484.chunk.css.map",
+    "static/js/2.eccb123c.chunk.js.LICENSE.txt": "/athosfranco/cryptohub-app/static/js/2.eccb123c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47021d07.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.eccb123c.chunk.js",
+    "static/css/main.ac189484.chunk.css",
+    "static/js/main.56130f4b.chunk.js"
+  ]
+}
