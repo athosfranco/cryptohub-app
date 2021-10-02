@@ -11,6 +11,7 @@ Este projeto foi desenvolvido durante meus estudos pessoais sobre React e consum
   * React
   * Axios
   * React Bootstrap
+  * ChartJS
   * CoinGecko API
 
 
