@@ -7,10 +7,11 @@
 
 Este projeto foi desenvolvido durante meus estudos pessoais sobre React e consumo de API. Uma versão de produção foi hospedada no Netlify. 
 
-Tecnologias utilizadas:
--React
--Axios
--CoinGecko API
+* Tecnologias utilizadas:
+  * React
+  * Axios
+  * CoinGecko API
+
 
 
 
