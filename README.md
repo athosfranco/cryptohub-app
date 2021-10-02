@@ -10,6 +10,7 @@ Este projeto foi desenvolvido durante meus estudos pessoais sobre React e consum
 * Tecnologias utilizadas:
   * React
   * Axios
+  * React Bootstrap
   * CoinGecko API
 
 
