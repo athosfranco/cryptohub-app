@@ -130,7 +130,7 @@ function App() {
         />
       )}
       <div ref={newsRef} style={{ marginBottom: "30px" }}></div>
-      <NewsSection appLanguage={appLanguage} />
+      {/* <NewsSection appLanguage={appLanguage} /> */}
       <ScrollToTop />
       <Footer />
     </div>
