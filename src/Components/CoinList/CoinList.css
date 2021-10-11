@@ -1,6 +1,7 @@
 .coin-cards-container {
   display: grid;
   width: 100%;
+  min-height: 100vh;
   grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
   grid-gap: 40px;
   padding: 20px 0;
@@ -11,6 +12,10 @@
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 60px));
   grid-gap: 40px;
+}
+
+.cards h4 {
+  width: 100vw;
 }
 
 .card {

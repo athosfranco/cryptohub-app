@@ -14,17 +14,23 @@ const CoinList = ({ onGetCoinData, currency, filteredCoins, appLanguage }) => {
       <main>
         <div className="coin-cards-container">
           <div className="cards">
-            {filteredCoins.map((coin) => {
-              return (
-                <CoinCard
-                  coin={coin}
-                  currency={currency}
-                  appLanguage={appLanguage}
-                  selectedCoin={coin.name}
-                  onGetSelectedCoin={selectedCoinHandler}
-                />
-              );
-            })}
+            {filteredCoins.length > 0 ? (
+              filteredCoins.map((coin) => {
+                return (
+                  <CoinCard
+                    coin={coin}
+                    currency={currency}
+                    appLanguage={appLanguage}
+                    selectedCoin={coin.name}
+                    onGetSelectedCoin={selectedCoinHandler}
+                  />
+                );
+              })
+            ) : appLanguage === "pt-BR" ? (
+              <h4>Ops! Não encontramos nenhum resultado.</h4>
+            ) : (
+              <h4>Whops! No result found.</h4>
+            )}
           </div>
         </div>
       </main>
