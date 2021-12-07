@@ -1,20 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, Button } from "react-bootstrap";
-import {
-  faAngleDoubleUp,
-  faAngleDoubleDown,
-  faChartLine,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleUp, faAngleDoubleDown, faChartLine } from "@fortawesome/free-solid-svg-icons";
 import InfoTag from "../CoinDetails/InfoTag.jsx";
 
 const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
   //envia 'selectedCoin' pra CoinList
   const selectedCoinHandler = (e) => {
-    const selectedCoin =
-      e.target.parentNode.parentNode.parentNode.firstChild.textContent
-        .split("(")[0]
-        .trim();
+    const selectedCoin = e.target.parentNode.parentNode.parentNode.firstChild.textContent.split("(")[0].trim();
     onGetSelectedCoin(selectedCoin);
   };
 
@@ -31,9 +24,7 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
             <div style={{ display: "flex", flexDirection: "column" }}>
               {" "}
               <Card.Title>{coin.name}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
-                ({coin.symbol.toUpperCase()})
-              </Card.Subtitle>
+              <Card.Subtitle className="mb-2 text-muted">({coin.symbol.toUpperCase()})</Card.Subtitle>
             </div>
           </div>
           <p className="card-rank">#{coin?.market_cap_rank}</p>
@@ -47,18 +38,12 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
           })} `}
           {coin.price_change_percentage_24h > 0 ? (
             <p className="card-price-up">
-              <FontAwesomeIcon
-                icon={faAngleDoubleUp}
-                style={{ color: "#2cb362", margin: "0px 8px" }}
-              />
+              <FontAwesomeIcon icon={faAngleDoubleUp} style={{ color: "#2cb362", margin: "0px 8px" }} />
               {coin.price_change_percentage_24h.toFixed(2)}%
             </p>
           ) : (
             <p className="card-price-down">
-              <FontAwesomeIcon
-                icon={faAngleDoubleDown}
-                style={{ color: "#bd5e74", margin: "0px 8px" }}
-              />
+              <FontAwesomeIcon icon={faAngleDoubleDown} style={{ color: "#bd5e74", margin: "0px 8px" }} />
               {coin.price_change_percentage_24h.toFixed(2)}%
             </p>
           )}
@@ -94,10 +79,7 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
             }}
             onClick={selectedCoinHandler}
           >
-            <FontAwesomeIcon
-              icon={faChartLine}
-              style={{ fontSize: "1.2rem", margin: "0px 8px" }}
-            />
+            <FontAwesomeIcon icon={faChartLine} style={{ fontSize: "1.2rem", margin: "0px 8px" }} />
             {appLanguage === "pt-BR" ? "Mostrar Detalhes" : "Show Details"}
           </Button>
         </div>
