@@ -1,4 +1,4 @@
-# CryptoHub 1.2
+# CryptoHub
 
 ### Live Demo: https://cryptohub-app.netlify.app/
 
