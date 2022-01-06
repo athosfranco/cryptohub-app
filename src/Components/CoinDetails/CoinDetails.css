@@ -1,6 +1,11 @@
 .coin-details-container {
-  background-color: #041a29;
-  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 1px 9px 12px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 9px 12px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 9px 12px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 25px;
   padding: 1.5rem 3rem;
   margin: 50px auto;
   max-width: 1200px;
@@ -82,7 +87,7 @@
 @media only screen and (max-width: 500px) {
   .coin-details-container {
     background-color: #041a29;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 1em 1rem;
     margin: 50px auto;
     max-width: 95%;

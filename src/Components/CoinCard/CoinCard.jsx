@@ -12,25 +12,21 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
   };
 
   return (
-    <Card value={coin.id} className="card border-0">
-      <Card.Body
-        style={{
-          backgroundColor: "#041A29",
-        }}
-      >
+    <div value={coin.id} className="card">
+      <div className="card-body">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <div style={{ display: "flex" }}>
             <img src={coin.image} alt=""></img>
             <div style={{ display: "flex", flexDirection: "column" }}>
               {" "}
-              <Card.Title>{coin.name}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">({coin.symbol.toUpperCase()})</Card.Subtitle>
+              <span style={{ fontSize: "24px" }}>{coin.name}</span>
+              <span className="mb-2 text-muted">({coin.symbol.toUpperCase()})</span>
             </div>
           </div>
           <p className="card-rank">#{coin?.market_cap_rank}</p>
         </div>
 
-        <Card.Text className="card-price">
+        <span className="card-price">
           {`${currency.toUpperCase()} `}
           {`${coin.current_price.toLocaleString(appLanguage, {
             minimumFractionDigits: 2,
@@ -47,7 +43,7 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
               {coin.price_change_percentage_24h.toFixed(2)}%
             </p>
           )}
-        </Card.Text>
+        </span>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <InfoTag
             className="info-container-card"
@@ -83,8 +79,8 @@ const CoinCard = ({ coin, currency, appLanguage, onGetSelectedCoin }) => {
             {appLanguage === "pt-BR" ? "Mostrar Detalhes" : "Show Details"}
           </Button>
         </div>
-      </Card.Body>
-    </Card>
+      </div>
+    </div>
   );
 };
 
